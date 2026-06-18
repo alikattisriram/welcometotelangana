@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Telangana</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jim+Nightshade&family=Story+Script&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Telangana Logo">
+                </li>
+                <li class="navbar x">TELANGANA</li>
+                <li class="navbar ex"><a href="#home">Home</a></li>
+                <li class="navbar ex"><a href="#history">History</a></li>
+                <li class="navbar ex"><a href="#culture">Culture</a></li>
+                <!-- <li class="navbar ex"><a href="#food">Food</a></li> -->
+                <!-- <li class="navbar ex"><a href="#tourism">Tourism</a></li> -->
+                <!-- <li class="navbar ex"><a href="#contactus">Contact Us</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <img src="mahal.png" alt="Telangana" class="home-image">
+            <!-- <img src="erasebg-transformed.png" alt="Welcome" class="home-image x"> -->
+
+            <h1>STEP INTO THE SOUL OF TELANGANA</h1>
+            <h3>CAPITAL</h3>
+            <h2 class="capital">HYDERABAD</h2>
+            <h4>Heritage Meets Future</h4>
+            <p>A Place Where Heritage Meets Modern Vibrancy. As The City Of Timeless Traditions, It Seamlessly Bridges
+                Its Regal Past With A Dynamic Future, Offering A Unique Experience Where History Truly Comes Alive In
+                Every Corner.</p>
+            <p class="home-end"> ◆ Ancient Culture &nbsp;&nbsp; ◆ Modern Vibrancy &nbsp;&nbsp; ◆ Timeless Traditions
+                &nbsp; &nbsp; ◆ Dynamic Future</p>
+        </section>
+        <section id="history">
+            <img src="history.png" alt="History" class="history-image">
+            <span> History</span>
+            <h1>The Struggle That Became A State</h1>
+            <p>Telangana, located on the Deccan Plateau, has a history dating back to prehistoric times, with evidence
+                of Stone Age settlements and the ancient Assaka Mahajanapada (700–400 BCE). It later flourished under
+                the Satavahana dynasty (1st century BCE–3rd century CE), followed by medieval rulers like the Kakatiyas
+                (12th–14th century), who built the famed Warangal Fort and promoted Telugu culture. After their fall,
+                the region came under the Delhi Sultanate, Bahmani Sultanate, and the Qutb Shahi dynasty, which founded
+                Hyderabad in 1591. The Nizams of Hyderabad (1724–1948) modernized the region with railways,
+                universities, and administrative reforms but resisted joining India after independence, leading to the
+                Indian Army’s annexation in 1948. Telangana was merged with Andhra Pradesh in 1956, sparking decades of
+                agitation for a separate state. Finally, on June 2, 2014, Telangana was carved out as India’s 29th
+                state, with Hyderabad as its capital, marking the culmination of its long struggle for self-identity.
+            </p>
+            <div class="history-end">
+                ◆ Ancient Roots &nbsp;&nbsp; ◆ Dynastic Glory &nbsp;&nbsp; ◆ Colonial Legacy &nbsp;&nbsp;
+                ◆ Statehood Triumph
+            </div>
+            <div class="hyperend"> Layers Of Time</div>
+
+            <div class="flex-parent">
+                <div class="relative-wrapper">
+
+                    <div class="absolute-box">
+                        <img src="kalathoranam.png" alt="History Image 1" class="history-image-1">
+                        <div class="overlay">The Kakatiya Kala Thoranam is not just an ancient stone arch — it is a
+                            timeless symbol of Telangana’s heritage, resilience, and pride, standing tall for over 800
+                            years.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="Thousandpillar.png" alt="History Image 2" class="history-image-1">
+                        <div class="overlay">The Thousand Pillar Temple, built in the 12th century by the Kakatiya
+                            dynasty, is a masterpiece of star‑shaped architecture dedicated to Shiva, Vishnu, and Surya.
+                            Its richly carved pillars and sculptures symbolize Telangana’s devotion and artistic
+                            excellence.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="Ramappa.png" alt="History Image 3" class="history-image-1">
+                        <div class="overlay">The Ramappa Temple, constructed in the 13th century under Kakatiya rule, is
+                            renowned for its floating bricks and celestial dancer carvings. Recognized as a UNESCO World
+                            Heritage Site, it stands as a testament to Telangana’s engineering brilliance and cultural
+                            grandeur.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="Golconda.png" alt="History Image 4" class="history-image-1">
+                        <div class="overlay">Golconda Fort, expanded between the 12th and 16th centuries, is famed for
+                            its acoustic marvels and diamond trade legacy. Once the capital of the Qutb Shahi dynasty,
+                            it remains a symbol of Telangana’s royal power, resilience, and architectural ingenuity.
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+        <div class="separator"></div>
+        <section id="culture">
+            <!-- <img src="culture.png" alt="Culture" class="culture-image"> -->
+            <span> Culture</span>
+            <!-- <h1>A Tapestry Of Traditions And Vibrancy</h1>
+            <p>Telangana’s culture is a vibrant tapestry woven from its rich history, diverse traditions, and dynamic
+                modernity. The state is renowned for its unique blend of Telugu and Deccan influences, reflected in
+                its language, art, music, dance, and festivals. The iconic Bathukamma festival celebrates the beauty of
+                nature and womanhood with colorful floral arrangements and traditional songs. Telangana’s cuisine is a
+                flavorful fusion of spicy and tangy dishes, with specialties like Hyderabadi Biryani and Pesarattu.
+                The state’s arts scene thrives with traditional crafts like Bidriware and contemporary expressions in
+                literature, cinema, and performing arts. Telangana’s culture is a living mosaic that honors its
+                heritage while embracing the vibrancy of modern life.</p>
+            <div class="culture-end">
+                ◆ Bathukamma Festival &nbsp;&nbsp; ◆ Hyderabadi Biryani &nbsp;&nbsp; ◆ Bidriware Craft &nbsp;&nbsp;
+                ◆ Vibrant Arts Scene
+            </div> -->
+            <div class="hyperend"> A Living Mosaic</div>
+            <div class="flex-parent">
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="bathukamma.png" alt="Culture Image 1" class="culture-image-1">
+                        <div class="overlay">Bathukamma is Telangana’s floral festival, celebrated by women with vibrant
+                            stacks of seasonal flowers. It symbolizes nature’s beauty, feminine grace, and community
+                            spirit.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="https://www.shutterstock.com/image-photo/traditional-chicken-biryani-served-brass-600nw-2622739739.jpg"
+                            alt="Culture Image 2" class="culture-image-1">
+                        <div class="overlay">Hyderabadi Biryani, a royal dish blending Mughal and Telugu flavors, is
+                            famed for its aromatic basmati rice, tender meat, and rich spices. It represents Telangana’s
+                            culinary fusion and heritage.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="bidriware.png" alt="Culture Image 3" class="culture-image-1">
+                        <div class="overlay">Nirmal Paintings, crafted in the town of Nirmal, are known for their golden
+                            hues and mythological themes. They showcase Telangana’s artistic finesse and storytelling
+                            tradition.<br>&emsp;&emsp;Bidriware, a metal craft from Hyderabad, features intricate silver inlay on
+                            blackened alloy. It reflects Telangana’s Indo-Persian artistry and timeless elegance.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="https://files.prokerala.com/news/photos/imgs/1200/people-participate-in-bonalu-celebrations-in-724073.jpg"
+                            alt="Culture Image 4" class="culture-image-1">
+                        <div class="overlay">Bonalu is a traditional festival honoring Goddess Mahankali, marked by
+                            offerings in decorated pots, vibrant processions, and fierce Pothuraju performances. It
+                            embodies devotion and local pride.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/0*1IHR40BW_JwKNpE1.jpg"
+                            alt="Culture Image 3" class="culture-image-2">
+                        <div class="overlay-1">Bharatanatyam, widely performed in Telangana, is a classical dance of
+                            rhythm and expression. It symbolizes spiritual storytelling and artistic refinement.</div>
+                    </div>
+                </div>
+                <div class="relative-wrapper">
+                    <div class="absolute-box">
+                        <img src="https://cdn.prod.website-files.com/622f8f63c2670552180d6b80/6289924f7475d30e33e01759_Company-photoshoot1_2009%20copy.webp"
+                            alt="Culture Image 3" class="culture-image-2">
+                        <div class="overlay-1">Kuchipudi, a classical dance form practiced in Telangana, blends graceful
+                            movements with expressive storytelling. It reflects devotion, discipline, and cultural
+                            continuity.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="ok">@copyrights 2026 reserved for Telangana Govt.in</div>
+    </footer>
+</body>
+
+</html>
